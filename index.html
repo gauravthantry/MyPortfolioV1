@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="html, CSS, JavaScript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/app.js"></script>
+</head>
+
+<body class="body-style">
+  <!--!st revie change1: Added section tag instead of <div> (using html5 tags)
+  and also div should be used as a last resort if no other tag could be used Ref: https://stackoverflow.com/questions/6939864/what-is-the-difference-between-section-and-div-->
+    <section class="page-position">
+        <nav class="navbar navbar-default">
+            <!-- This is used to create a navigational bar on top of the web page allowing the user to navigate to the different portions of the webpage-->
+            <section class="container-fluid">
+                <section class="navbar-header">
+                    <a class="navbar-brand" href="#">Gaurav Thantry</a>
+                </section>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#About-me" class="abt-me">ABOUT ME</a></li>
+                    <li><a href="#my-interests">MY INTERESTS</a></li>
+                    <li><a href="#get-in-touch">GET IN TOUCH</a></li>
+                </ul>
+            </section>
+        </nav>
+        <section class="container-fluid" id="About-me">
+            <h3 class="heading-style">
+               <hr>
+               <span class="navpart-style">ABOUT ME</span>
+            </h3>
+            <section class="row-fluid someDiv">
+                <section class="col-xs-9">
+                    <p class="content-style"> Hola! I am Gaurav, I work at the First Abu Dhabi Bank as a Senior Technical Analyst. I love coding and I wanna build my career in a lot of fields. If I could name some right way, they would be, Web Development, SOA Technologies, Automation Testing and a lot more. Apart from these I also love to read. The genre of my liking are Fiction, Adventurous, and Epics.
+                </section>
+                <section class="col-xs-3 relative"> <img class="img-responsive image-position" src="https://qph.ec.quoracdn.net/main-qimg-24133659af6ec93b462b1ec32a3312e6-c" alt="Goku's Image">
+                </section>
+            </section>
+            <hr>
+        </section>
+        <section class="container-fluid" id="my-interests">
+            <h3 class="heading-style">
+               <hr>
+               <span class="navpart-style"> MY INTERESTS</span>
+            </h3>
+            <section class="myinterests-content">
+                <p class="content-style"> I have already mentioned some of my interests in the previous section. Hold tight! I am going to list all of my Interests and hobbies in this section to bore you. The technical tools of my interest are.
+                    <br/>
+                </p>
+                <section class="row-fluid someDiv"> <!--1st Review Change2: Added row class to position the text content and the image -->
+                    <section class="col-xs-9">
+                        <p class="content-style myinterests-list">
+                            <i class="fa fa-bolt">Web Development</i>
+                            <br/>
+                            <i class="fa fa-bolt">Selenium WebDriver</i>
+                            <br/>
+                            <i class="fa fa-bolt">WSO2 ESB</i>
+                            <br/>
+                            <i class="fa fa-bolt">NodeJS</i>
+                            <br/>
+                            <i class="fa fa-bolt">SOA Technologies</i>
+                            <br/>
+                        </p>
+                    </section>
+                    <section class="col-xs-3 relative"><img class="img-responsive image-position1" src="images/technical.jpg" alt="technology image">
+                    </section>
+                </section>
+                <p class="content-style"> I had also mentioned that I liked reading and the genres of my liking. Some of my favourite authors are:
+                    <br/>
+                </p>
+                <section class="row-fluid someDiv">  <!--1st Review Change3: Added row class to position the text content and the image -->
+                    <section class="col-xs-9">
+                        <p class="content-style myinterests-list">
+                            <i class="fa fa-pencil">Suzanne Collins</i>
+                            <br/>
+                            <i class="fa fa-pencil">Veronica Roth</i>
+                            <br/>
+                            <i class="fa fa-pencil">Jo Jo Moyes</i>
+                            <br/>
+                            <i class="fa fa-pencil">Rick Riordan</i>
+                            <br/>
+                            <i class="fa fa-pencil">Ally Condie</i>
+                            <br/>
+                        </p>
+                    </section>
+                    <section class="col-xs-3 relative"><img class="img-responsive image-position1" src="images/novelist.jpeg" alt="A sketch of a novelist">
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="container-fluid" id="get-in-touch">
+            <h3 class="heading-style">
+               <hr>
+               <span class="navpart-style">GET IN TOUCH</span>
+            </h3>
+            <section class="myinterests-list">
+                <section class="row someDiv">
+                    <section class="col-md-7 formPosition">  <!--This form is to allow the user to fill in his/her details -->
+                        <br/>
+                        <form method="post" action="mailto:gaurav.thantry@gmail.com">
+                            <label>
+                                <input type="text" class="text-line" placeholder="Name" required>
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="text" class="text-line" placeholder="Email Address" required>
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="text" class="text-line" placeholder="phone number">
+                            </label>
+                            <br/>
+                            <label>
+                                <input id="message-size" type="text" placeholder="Message">
+                            </label>
+                            <br/>
+                            <button type="submit" class="button-size btn btn-block btn-primary"><i class="fa fa-paper-plane">Submit</i></button>
+                        </form>
+                    </section>
+                    <section class="col-md-5">
+                        <p class="content-style"> Want to get in touch? Be it to know more about me or have any questions, please fill up the form and I'll revert back soon.</p>
+                        <img src="images/mockingjay.png" alt="A mockingbird: Sybol of luck" class="mockingjay"><!--1st Review Change4: Added the fourth Image -->
+                    </section>
+                </section>
+                <br/>
+            </section>
+            <hr/>
+            <footer class="footerStyle">
+                <p>Made by Gaurav Thantry <i class="fa fa-copyright"></i> 2018
+                    <br/>
+                    <a href="https://twitter.com/GauravThantry" target="_blank" class="link-space"> <i class="fa fa-twitter"></i></a><a class="link-space" href="https://www.facebook.com/gaurav.thantry" target="_blank"><i class="fa fa-facebook"></i></a><a class="link-space" href="https://www.linkedin.com/in/gaurav-thantry-0245ab64/" target="_blank"><i class="fa fa-linkedin  icolor"></i></a>
+            </footer>
+        </section>
+    </section>
+</body>
+
+</html>
